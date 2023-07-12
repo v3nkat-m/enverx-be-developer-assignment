@@ -74,8 +74,11 @@ Response:
 }
 ```
 2) Retrieve a post by ID
+
 Endpoint : `GET /posts/:id`
+
 Example: `GET /posts/64ae4a495acc25798aa85260`
+
 Response:
 ```
 {
@@ -89,8 +92,11 @@ Response:
 }
 ```
 3) Update a post
+   
 Endpoint: `PUT /posts/:id`
+
 Example: `PUT /posts/64ae4a495acc25798aa85260`
+
 Request:
 ```
 {
@@ -116,8 +122,11 @@ Response:
 }
 ```
 4) Delete a post
+   
 Endpoint: `DELETE /posts/:id`
+
 Example: `DELETE /posts/64ae92f11dd89894094df63a`
+
 Response:
 ```
 {
@@ -125,6 +134,7 @@ Response:
 }
 ```
 5) Get all posts with filters and sorting
+   
 Endpoint: `GET /posts`
 
 Query Parameters:
@@ -133,8 +143,11 @@ Query Parameters:
 `sortOrder`: Sort order : `asc` or `desc`
 
 Example:
+
 Retrieving Posts based on category and sorted by date(asc by default)
+
 Endpoint: `http://localhost:3000/posts?category=Family&sortBy=date`
+
 Response:
 ```
 [
