@@ -139,7 +139,9 @@ Endpoint: `GET /posts`
 
 Query Parameters:
 `category`: Filter post by category
+
 `sortBy`: Sort posts by date or title
+
 `sortOrder`: Sort order : `asc` or `desc`
 
 Example:
