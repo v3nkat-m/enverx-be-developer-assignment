@@ -51,6 +51,7 @@ Two Schema were made- PostModel and CategoryModel
 ### API Endpoints
 1) POST Endpoint
 Endpoint: `POST /posts`
+
 Request Body:
 ```
 {
