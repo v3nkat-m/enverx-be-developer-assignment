@@ -40,7 +40,7 @@ Two Schema were made- PostModel and CategoryModel
 1) title - String - Title of the blog
 2) author - String - Author's name
 3) content - String - Blog Content
-4) category - String - A set of predefined categories. This field is referenced to CategoryModel
+4) category - String - A string from a set of predefined categories. This field is referenced to CategoryModel
 5) date - Date - Date of the article creation
 
 #### CategoryModel Schema
