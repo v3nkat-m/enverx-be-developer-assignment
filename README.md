@@ -12,7 +12,7 @@ and trade future carbon credits.
 ### Dependencies
 Node,Express,Npm,Git,Mongodb,Mongoose,Nodemon
 
-###Installation
+### Installation
 1) Clone the repo
 ```
 git clone git@github.com:v3nkat-m/enverx-be-developer-assignment.git
@@ -35,16 +35,16 @@ The Server will start running on http://localhost:<port> and make sure the db is
 ### Schema
 Two Schema were made- PostModel and CategoryModel
 
-####PostModel Schema
-#####Fields
+#### PostModel Schema
+##### Fields
 1) title - String - Title of the blog
 2) author - String - Author's name
 3) content - String - Blog Content
 4) category - String - A set of predefined categories. This field is referenced to CategoryModel
 5) date - Date - Date of the article creation
 
-####CategoryModel Schema
-#####Fields
+#### CategoryModel Schema
+##### Fields
 1) name - String - Category name
 2) posts - Array of Object Ids referencing PostModel Schema - Array of blog posts belonging to a particular category( Have not implemented an endpoint to update this but it would enable faster retrieving of articles based on category rather than filtering out)
    
