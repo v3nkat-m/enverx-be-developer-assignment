@@ -28,7 +28,7 @@ npm install
 ```
 npm start
 ```
-The Server will start running on http://localhost:<port> and make sure the db is up and running before making the requests.
+The Server will start running on `http://localhost:<port>` and make sure the db is up and running before making the requests.
 
 
 
