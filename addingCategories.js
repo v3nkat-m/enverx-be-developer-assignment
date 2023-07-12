@@ -59,9 +59,15 @@ let predefinedTags = [
 	'Nature',
 ];
 
-predefinedTags.forEach(async (category) => {
-	let newCategory = new categoryModel({ name: category, posts: [] });
-	await newCategory.save();
-});
-
-console.log('Tags added successfully.');
+Promise.all(
+	predefinedTags.map(async (category) => {
+		let newCategory = new categoryModel({ name: category, posts: [] });
+		await newCategory.save();
+	})
+)
+	.then(() => {
+		console.log('Categories added successfully.');
+	})
+	.catch((error) => {
+		console.error('Error occurred while adding categories:', error);
+	});
