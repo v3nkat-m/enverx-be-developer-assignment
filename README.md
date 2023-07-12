@@ -49,7 +49,7 @@ Two Schema were made- PostModel and CategoryModel
 2) posts - Array of Object Ids referencing PostModel Schema - Array of blog posts belonging to a particular category( Have not implemented an endpoint to update this but it would enable faster retrieving of articles based on category rather than filtering out)
    
 ### API Endpoints
-1) POST Endpoint
+1) #### POST Endpoint
 Endpoint: `POST /posts`
 
 Request Body:
@@ -73,7 +73,7 @@ Response:
     "__v": 0
 }
 ```
-2) Retrieve a post by ID
+2) #### Retrieve a post by ID
 
 Endpoint : `GET /posts/:id`
 
@@ -91,7 +91,7 @@ Response:
     "__v": 0
 }
 ```
-3) Update a post
+3) #### Update a post
    
 Endpoint: `PUT /posts/:id`
 
@@ -121,7 +121,7 @@ Response:
     "__v": 0
 }
 ```
-4) Delete a post
+4) #### Delete a post
    
 Endpoint: `DELETE /posts/:id`
 
@@ -133,7 +133,7 @@ Response:
     "message": "Post deleted successfully"
 }
 ```
-5) Get all posts with filters and sorting
+5) #### Get all posts with filters and sorting
    
 Endpoint: `GET /posts`
 
